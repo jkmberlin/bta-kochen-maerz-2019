@@ -18,13 +18,75 @@ ul {
 nav a{
   color: #000;
 text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+transition: color 1s ease;
+}
+
+nav a:hover{
+  color: #66ff99;
+
 }
 
 /* IDs in HTML werden in css zu einem # */
-#lieblingslink {
-  color: pink;
+
+
+
+
+
+#navigation {
+  display: none;
 }
 
+
+#navigation.show {
+  display: block;
+}
+
+
+#burger {
+  border: none;
+  background: white;
+}
+
+
+
 .container {
-  background: blue;
+display: flex;
+justify-content: space-between;
+padding-left: 1rem;
+padding-right: 1rem;
+
+
+}
+
+#hero{
+  background-image: url(../img/intro.jpg);
+
+}
+
+
+@media (min-width: 1024px) {
+  #burger {
+    display: none;
+  }
+
+  #navigation{
+    display: block;
+  }
+
+  nav li {
+    float: left;
+    margin-left: 30px;
+  }
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+}
+
+
+
 }
