@@ -88,6 +88,8 @@ nav a:hover {
 
 }
 
+
+
 .hero-box p {
   font-size: 20px;
 }
@@ -109,11 +111,29 @@ h3 a{
   color: black
 }
 
-
+.card p a{
+  color: #828282;
+  padding: 1rem;
+}
 
 
 .card {
   text-align: center;
+  border-radius: 4px;
+  box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+.card .button{
+  background: #374a67;
+  color:#fff;
+  display: block;
+  margin: 1rem;
+}
+
+.card .button:hover{
+  background: #fff;
+  color: #374a67;
 }
 
 
